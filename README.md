@@ -1,4 +1,4 @@
-[Original website](https://tamimtxd.github.io/UltraEdit-download-page-clone/)
+[Original website](https://www.ultraedit.com/downloads/ultraedit-download-thank-you/)
 
 [My clone](https://tamimtxd.github.io/UltraEdit-download-page-clone/)
 
