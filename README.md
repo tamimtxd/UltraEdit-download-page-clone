@@ -1,5 +1,3 @@
-# UltraEdit Download Page - Clone
-
 [Original website](https://tamimtxd.github.io/UltraEdit-download-page-clone/)
 
 [My clone](https://tamimtxd.github.io/UltraEdit-download-page-clone/)
