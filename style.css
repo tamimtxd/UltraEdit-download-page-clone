@@ -335,6 +335,9 @@ footer i:hover {
 /* Media queries */
 
 @media screen and (max-width: 1200px) {
+  main {
+    width: 90vw;
+  }
   section.second {
     grid-template-columns: 1fr 1fr;
   }
@@ -399,10 +402,6 @@ footer i:hover {
 
   nav a {
     font-weight: 500;
-  }
-
-  main {
-    width: 90vw;
   }
 
   .heading {
