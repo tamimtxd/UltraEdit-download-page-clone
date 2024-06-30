@@ -5,6 +5,6 @@
 ## Overview
 
 - **Responsive Design:** Adaptable to various screen sizes.
-- **CSS Grid and Flexbox:** Used for layout and positioning.
 - **Hamburger Menu:** Available on mobile view for easy navigation.
+- **CSS Grid and Flexbox:** Used for layout and positioning.
 
