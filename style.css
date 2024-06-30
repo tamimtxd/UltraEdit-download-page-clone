@@ -31,7 +31,6 @@ nav ul {
 }
 
 nav li {
-  list-style: none;
   display: flex;
   align-items: center;
   gap: 4px;
@@ -57,15 +56,16 @@ nav li a:hover {
   color: #7a7a7a;
 }
 
-#checkbox, /* For burger menu*/
-.burger-menu {
+/* Burger menu hidden*/
+#checkbox,
+.menu-btn,
+.menu-close-btn {
   display: none;
 }
 
 /*Main Section*/
 
 main {
-  /* width: 65vw; */
   max-width: 1000px;
   margin: auto;
 }
@@ -133,6 +133,7 @@ section.second .btns {
   display: flex;
   justify-content: center;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .green {
@@ -230,7 +231,6 @@ aside.first .bottom h2 {
 }
 
 aside.first .bottom a {
-  text-decoration: none;
   color: #00b6d1;
 }
 
@@ -248,16 +248,13 @@ aside.second h4 {
   margin: 20px 0;
 }
 
-aside.second ul {
-  list-style: none;
-  flex: 1;
-}
-
 aside.second li {
-  color: #464343;
+  color: #242222;
   padding: 3px 0;
   cursor: pointer;
   transition: 0.5s;
+  font-size: 13.5px;
+  flex: 1;
 }
 
 aside.second li:hover {
@@ -323,7 +320,6 @@ footer i:hover {
   left: 100%;
   margin: 20px;
   background-color: #00b6d1;
-  text-decoration: none;
   color: azure;
   padding: 25px;
 }
@@ -348,12 +344,23 @@ footer i:hover {
 }
 
 @media screen and (max-width: 1010px) {
-  .burger-menu {
+  .menu-btn {
     display: block;
+    transition: 0.5s;
+  }
+
+  .menu-close-btn {
+    display: none;
   }
 
   #checkbox:checked ~ .right {
     transform: translateY(0) scaleY(1);
+  }
+  #checkbox:checked ~ .menu-btn {
+    display: none;
+  }
+  #checkbox:checked ~ .menu-close-btn {
+    display: block;
   }
 
   .logo {
@@ -374,7 +381,7 @@ footer i:hover {
     transform: translateY(-50%) scaleY(0);
     background-color: white;
     border: 1px solid #e9e6e6;
-    transition: 0.5s linear;
+    transition: 0.5s ease-in;
   }
 
   .right::before {
@@ -383,8 +390,6 @@ footer i:hover {
     width: 100%;
     background-color: #00b6d1;
     position: absolute;
-    left: 0;
-    top: 0;
   }
 
   nav ul {
